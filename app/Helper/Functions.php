@@ -12,3 +12,21 @@ function user_func(): string
 {
     return 'hello';
 }
+
+function friends($data): array
+{
+
+    return $data;
+}
+
+function json_msg($array): string
+{
+
+    $data['code'] = 0;
+    $data['msg'] =  "success";
+    $data['data'] = $array;
+
+    return json_encode($data,JSON_UNESCAPED_UNICODE );
+}
+
+
